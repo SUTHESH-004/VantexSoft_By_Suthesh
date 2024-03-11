@@ -27,7 +27,7 @@ public class App {
         }
         case "Supervisor":{
             System.out.print("Welcome, Supervisor "+ ei.getName());
-            SupercisorController.start();
+            SupercisorController.start(ei);
             break;
                 }
         case "Employee":{

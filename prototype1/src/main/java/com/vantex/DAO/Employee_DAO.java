@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import com.vantex.Model.EmployeeInfo;
 import com.vantex.Model.UserCredentials;
-
+import java.util.*;
 
 public class Employee_DAO {
     public static int  AuthenticatePassword(UserCredentials uc)
@@ -34,7 +34,7 @@ public class Employee_DAO {
     public static  EmployeeInfo getEmployeeRole(UserCredentials uc) throws SQLException, ClassNotFoundException
     {
             Connection con = DbConnection.getConnection();
-            String query = "select emp_name,roles from employee where email=?";
+            String query = "select emp_name,roles,emp_id from employee where email=?";
             PreparedStatement ps = con.prepareStatement(query);
             ps.setString(1,uc.getEmail());
             ResultSet rs= ps.executeQuery();
@@ -42,6 +42,12 @@ public class Employee_DAO {
             EmployeeInfo ei = new EmployeeInfo();
             ei.setName(rs.getString(1));
             ei.setRole(rs.getString(2));
+            ei.setEmp_id(rs.getInt(3));
             return ei;
     }
+    public static ArrayList<EmployeeInfo> getEmployee(EmployeeInfo s)
+    {
+        String Query ="select name from employee where "
+    }
+
 }
