@@ -2,8 +2,7 @@ package com.vantex.view;
 
 import java.util.Scanner;
 import com.vantex.Model.*;
-public class ManagerConsoleUI {
-
+public class ManagerConsoleUI extends ConsoleUI{
     public Choice displayMenu() {
         Scanner sc = Scan.sc;
         Choice c = new Choice();
@@ -17,6 +16,5 @@ public class ManagerConsoleUI {
         c.setChoice(sc.nextInt());
         return c;
     }
-
-
+    
 }

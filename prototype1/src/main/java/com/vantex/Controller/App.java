@@ -16,23 +16,26 @@ public class App {
         }
         else
         {
+            System.out.println("The password is Incorrect");
             start();
+            System.exit(100);
         }
-        EmployeeInfo ei = Employee_DAO.getEmployeeRole(uc);
+        EmployeeInfo ei = Employee_DAO.getEmployeeInfo(uc);
         switch(ei.getRole()){
         case "Manager":{
             System.out.println("Welcome, Manager "+ei.getName());
-            ManagerController.start();
+            // ManagerController.start();
             break;
         }
         case "Supervisor":{
             System.out.print("Welcome, Supervisor "+ ei.getName());
-            SupercisorController.start(ei);
+            SupervisorController.start(ei);
             break;
                 }
         case "Employee":{
             System.out.print("Welcome,"+ei.getName());
-            EmployeeController.start();
+            // EmployeeController.start();
+            break;
         }
         }
 

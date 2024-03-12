@@ -1,6 +1,6 @@
 package com.vantex.view;
 import com.vantex.Model.*;
-public class EmployeeConsoleUI {
+public class EmployeeConsoleUI extends ConsoleUI{
     public Choice displayMenu()
     {
         Choice c = new Choice();

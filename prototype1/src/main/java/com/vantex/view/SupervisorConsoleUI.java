@@ -1,8 +1,10 @@
 package com.vantex.view;
 
+// import java.util.ArrayList;
+
 import com.vantex.Model.*;
 
-public class SupervisorConsoleUI {
+public class SupervisorConsoleUI extends ConsoleUI{
     public Choice displayMenu() {
         Choice c = new Choice();
         System.out.println("Welcome! Press the numbers to indicate what you want to do:");
@@ -14,14 +16,4 @@ public class SupervisorConsoleUI {
         c.setChoice(Scan.sc.nextInt());
         return c;
     }
-
-    public Choice displayAttendanceMenu() {
-        Choice c = new Choice();
-        System.out.println("Enter you choice");
-        System.out.println("1. view Todays Attendance");
-        System.out.println("2. view particular date Attendance");
-        c.setChoice(Scan.sc.nextInt());
-        return c;
-    }
-
 }

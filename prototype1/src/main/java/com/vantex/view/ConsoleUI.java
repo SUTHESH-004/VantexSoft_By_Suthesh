@@ -1,6 +1,8 @@
 package com.vantex.view;
 
 import com.vantex.Model.*;
+
+import java.time.LocalDate;
 import java.util.*;
 
 public class ConsoleUI {
@@ -33,4 +35,30 @@ public class ConsoleUI {
         S.setChoice(sc.nextInt());
         return S;
     }
+    public ArrayList<EmployeeInfo> putAttendance(ArrayList<EmployeeInfo> listEmp )
+    {
+        LocalDate date = LocalDate.now();
+        for(int i=0;i<listEmp.size();i++)
+        {
+
+            System.out.println(listEmp.get(i).getName());
+
+            listEmp.get(i).setStatus(sc.next());
+            listEmp.get(i).setDate(date+"");
+        }
+        return listEmp;
+    }
+    public ArrayList<EmployeeInfo> putOutput(ArrayList<EmployeeInfo>listEmp)
+    {
+        LocalDate date = LocalDate.now();
+        for(int i=0;i<listEmp.size();i++)
+        {
+            System.out.println(listEmp.get(i).getName());
+            listEmp.get(i).setOutput(sc.nextDouble());
+            listEmp.get(i).setDate(date+"");
+        }   
+        return listEmp;
+    }
+
+
 }
