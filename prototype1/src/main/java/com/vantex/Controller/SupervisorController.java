@@ -16,10 +16,9 @@ public class SupervisorController {
             // Enter your attendance
             case 1 -> {
                 ArrayList<EmployeeInfo> ert = Employee_DAO.getEmployeeByTeamId(ei);
-                ArrayList<EmployeeInfo> ert2 = scui.putAttendance(ert);
-                Attendance_DAO.markAttendance(ert2, ei);
+                ArrayList<EmployeeInfo> ert2 = scui.putAttendance(ert); // get attendance from user
+                Attendance_DAO.markAttendance(ert2, ei); // marking attendance in db
             }
-
             // Enter your Output Entry
             case 2 -> {
                 ArrayList<EmployeeInfo> ert = Employee_DAO.getEmployeeByTeamId(ei);
@@ -31,10 +30,10 @@ public class SupervisorController {
             case 3-> {
                 LocalDate n = LocalDate.now();
                 ArrayList<EmployeeInfo> ert = Attendance_DAO.getAttendanceAndOutput(n+" ");
-
+                scui.displayAttendanceAndData(ert);
 
             }
 
         }
     }
-}4
+}

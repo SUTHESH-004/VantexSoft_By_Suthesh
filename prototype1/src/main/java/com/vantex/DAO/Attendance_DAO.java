@@ -5,6 +5,7 @@ package com.vantex.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
@@ -25,15 +26,29 @@ public class Attendance_DAO {
             ps.setInt(4, ei.getEmp_id());
             int rs = ps.executeUpdate();
             System.out.println(rs + "is Affected");
+
         }
         return true;
 
 
     }
-    // public static ArrayList<EmployeeInfo> getAttendanceAndOutput(String Date) throws ClassNotFoundException, SQLException {
-    //     Connection con = DbConnection.getConnection();
-
-    //     String Query = "select * from"
-    //     return null;
-    // }
+    public static ArrayList<EmployeeInfo> getAttendanceAndOutput(String Date) throws ClassNotFoundException, SQLException {
+        Connection con = DbConnection.getConnection();
+        String Query = "select e.emp_name,a.status, a.dateOfAttendance ,d.output from employee e left join attendance a on e.emp_id=a.employee_id left join daily_output d on d.emp_id = e.emp_id where attendance dateOfwork";
+        PreparedStatement ps = con.prepareStatement(Query);
+        ps.setString(1,Date);
+        ResultSet rs = ps.executeQuery();
+        ArrayList<EmployeeInfo> s = new ArrayList<EmployeeInfo>();
+        while(rs.next())
+        {
+            EmployeeInfo e = new EmployeeInfo();
+            e.setName(rs.getString(1));
+            e.setDate(rs.getString(2));
+            e.setStatus(rs.getString(3));
+            e.setOutput(rs.getInt(4));
+            s.add(e);
+            // System.out.println();
+        }
+        return s;
+    }
 }
