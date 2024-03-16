@@ -1,7 +1,6 @@
 package com.vantex.view;
-
 import java.util.Scanner;
-import com.vantex.Model.*;
+import com.vantex.Modal.Choice;
 public class ManagerConsoleUI extends ConsoleUI{
     public Choice displayMenu() {
         Scanner sc = Scan.sc;

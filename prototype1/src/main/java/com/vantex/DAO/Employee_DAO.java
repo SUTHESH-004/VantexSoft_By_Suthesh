@@ -4,10 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import com.vantex.Model.EmployeeInfo;
-import com.vantex.Model.UserCredentials;
 import java.util.*;
+
+import com.vantex.Modal.EmployeeInfo;
+import com.vantex.Modal.UserCredentials;
 
 public class Employee_DAO {
     public static int  AuthenticatePassword(UserCredentials uc)

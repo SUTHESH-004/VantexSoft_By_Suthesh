@@ -5,7 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import com.vantex.Model.EmployeeInfo;
+import com.vantex.Modal.EmployeeInfo;
+
 
 public class Daily_Output_DAO {
     public static ArrayList<EmployeeInfo> markOutput(ArrayList<EmployeeInfo> list, EmployeeInfo ei)

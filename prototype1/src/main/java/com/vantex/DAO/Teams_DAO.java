@@ -4,9 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import com.vantex.Model.EmployeeInfo;
-
+import com.vantex.Modal.EmployeeInfo;
 public class Teams_DAO {
     
 

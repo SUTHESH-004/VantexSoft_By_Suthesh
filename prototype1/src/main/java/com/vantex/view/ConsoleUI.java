@@ -1,10 +1,9 @@
 package com.vantex.view;
-
-import com.vantex.Model.*;
-
 import java.time.LocalDate;
 import java.util.*;
-
+import com.vantex.Modal.Choice;
+import com.vantex.Modal.EmployeeInfo;
+import com.vantex.Modal.UserCredentials;
 public class ConsoleUI {
     static Scanner sc = Scan.getScanner();
     public static void welcomeDisplay() {
@@ -21,12 +20,12 @@ public class ConsoleUI {
         System.out.print("   \\_/ \\__,_|_| |_|\\__\\___/_/\\_\\ |____/ \\___/|_|  \\__| \\_/\\_/ \\__,_|_|  \\___|");
     }
     public static UserCredentials Loginview() {
-        UserCredentials idpass = new UserCredentials();
+        UserCredentials uc = new UserCredentials();
         System.out.println("Enter your Email : ");
-        idpass.setEmail(sc.nextLine());
+        uc.setEmail(sc.nextLine());
         System.out.println("Enter you password : ");
-        idpass.setPassword(sc.nextLine());
-        return idpass;
+        uc.setPassword(sc.nextLine());
+        return uc;
     }
     public static Choice ContinueOrExit()
     {

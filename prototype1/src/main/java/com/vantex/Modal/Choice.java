@@ -1,4 +1,4 @@
-package com.vantex.Model;
+package com.vantex.Modal;
 
 public class Choice {
     int choice;

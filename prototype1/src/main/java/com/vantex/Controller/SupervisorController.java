@@ -4,11 +4,10 @@ import com.vantex.view.*;
 import com.vantex.DAO.Attendance_DAO;
 import com.vantex.DAO.Daily_Output_DAO;
 import com.vantex.DAO.Employee_DAO;
-
+import java.time.*;
 import java.sql.SQLException;
 import java.util.*;
-import com.vantex.Model.*;
-
+import com.vantex.Modal.*;
 public class SupervisorController {
     public static void start(EmployeeInfo ei) throws ClassNotFoundException, SQLException {
         SupervisorConsoleUI scui = new SupervisorConsoleUI();
@@ -30,9 +29,12 @@ public class SupervisorController {
             }
             // view report both employee attendance and output per day
             case 3-> {
-                
+                LocalDate n = LocalDate.now();
+                ArrayList<EmployeeInfo> ert = Attendance_DAO.getAttendanceAndOutput(n+" ");
+
+
             }
 
         }
     }
-}
+}4

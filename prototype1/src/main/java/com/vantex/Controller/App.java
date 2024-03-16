@@ -1,10 +1,12 @@
 package com.vantex.Controller;
-import com.vantex.view.*;
 
 import java.sql.SQLException;
 
-import com.vantex.DAO.*;
-import com.vantex.Model.*;
+import com.vantex.DAO.Employee_DAO;
+import com.vantex.Modal.EmployeeInfo;
+import com.vantex.Modal.UserCredentials;
+import com.vantex.view.ConsoleUI;
+
 public class App {
     public static void start() throws ClassNotFoundException, SQLException
     {

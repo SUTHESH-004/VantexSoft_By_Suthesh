@@ -1,5 +1,7 @@
 package com.vantex.view;
-import com.vantex.Model.*;
+
+import com.vantex.Modal.Choice;
+
 public class EmployeeConsoleUI extends ConsoleUI{
     public Choice displayMenu()
     {

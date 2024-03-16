@@ -1,12 +1,14 @@
 package com.vantex.DAO;
 
 // import com.vantex.Model.AttendanceInfo;
-import com.vantex.Model.EmployeeInfo;
+
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.*;
+
+import com.vantex.Modal.EmployeeInfo;
 
 public class Attendance_DAO {
     public static boolean markAttendance(ArrayList<EmployeeInfo> list, EmployeeInfo ei)
@@ -26,5 +28,12 @@ public class Attendance_DAO {
         }
         return true;
 
+
     }
+    // public static ArrayList<EmployeeInfo> getAttendanceAndOutput(String Date) throws ClassNotFoundException, SQLException {
+    //     Connection con = DbConnection.getConnection();
+
+    //     String Query = "select * from"
+    //     return null;
+    // }
 }

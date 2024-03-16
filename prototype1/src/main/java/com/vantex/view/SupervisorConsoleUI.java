@@ -1,8 +1,6 @@
 package com.vantex.view;
 
-// import java.util.ArrayList;
-
-import com.vantex.Model.*;
+import com.vantex.Modal.Choice;
 
 public class SupervisorConsoleUI extends ConsoleUI{
     public Choice displayMenu() {

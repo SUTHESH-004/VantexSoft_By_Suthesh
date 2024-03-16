@@ -5,7 +5,8 @@ import com.vantex.view.SupervisorConsoleUI;
 import com.vantex.DAO.Attendance_DAO;
 import com.vantex.DAO.Daily_Output_DAO;
 import com.vantex.DAO.Employee_DAO;
-import com.vantex.Model.*;
+import com.vantex.Modal.Choice;
+import com.vantex.Modal.EmployeeInfo;
 
 import java.sql.SQLException;
 import java.util.*;
@@ -21,7 +22,6 @@ public class ManagerController {
                 ArrayList<EmployeeInfo> ert2 = scui.putAttendance(ert);
                 Attendance_DAO.markAttendance(ert2, ei);
             }
-
             // Enter your Output Entry
             case 2 -> {
                 ArrayList<EmployeeInfo> ert = Employee_DAO.getEmployeeByTeamId(ei);

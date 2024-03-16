@@ -1,9 +1,9 @@
-package com.vantex.Model;
+package com.vantex.Modal;
 
 public class UserCredentials {
     String email;
     String password;
-    
+
     public void setEmail(String email) {
         this.email = email;
     }
