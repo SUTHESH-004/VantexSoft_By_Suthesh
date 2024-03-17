@@ -1,6 +1,23 @@
-login 
+login
 
+Manager
 
-put attendance . .  completed
-get attendance . . 
+1.Enter the attendance based on the team of the Supervisor
+2.Enter the Output based on the team of the Supervisor
+3.Get the Output and attendance with employeename based on the team of the Supervisor
+4.get the attendance with employeename based on the team of the Supervisor
+5 get the output with employeename based ont the team of the Supervisor
+6.Add employee.
+7 delete employee.
 
+Supervisor
+1.Enter the attendance based on the team of the Supervisor
+2.Enter the Output based on the team of the Supervisor
+3.Get the Output and attendance with employeename based on the team of the Supervisor
+4.get the attendance with employeename based on the team of the Supervisor
+5 get the output with employeename based ont the team of the Supervisor
+
+employee
+1.view their preformance of the year;
+2.view their performance of the month;
+3.view thier day report . 

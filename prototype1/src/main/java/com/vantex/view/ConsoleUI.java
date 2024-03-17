@@ -1,11 +1,14 @@
 package com.vantex.view;
+
 import java.time.LocalDate;
 import java.util.*;
 import com.vantex.Modal.Choice;
 import com.vantex.Modal.EmployeeInfo;
 import com.vantex.Modal.UserCredentials;
+
 public class ConsoleUI {
     static Scanner sc = Scan.getScanner();
+
     public static void welcomeDisplay() {
         System.out.printf("%30s", " ");
         System.out.print("__     __          _              ____         __ _                          \n");
@@ -19,6 +22,7 @@ public class ConsoleUI {
         System.out.printf("%30s", " ");
         System.out.print("   \\_/ \\__,_|_| |_|\\__\\___/_/\\_\\ |____/ \\___/|_|  \\__| \\_/\\_/ \\__,_|_|  \\___|");
     }
+
     public static UserCredentials Loginview() {
         UserCredentials uc = new UserCredentials();
         System.out.println("Enter your Email : ");
@@ -27,37 +31,39 @@ public class ConsoleUI {
         uc.setPassword(sc.nextLine());
         return uc;
     }
-    public static Choice ContinueOrExit()
-    {
+
+    public static Choice ContinueOrExit() {
         Choice S = new Choice();
         System.out.print("do want to continue or exit");
         S.setChoice(sc.nextInt());
         return S;
     }
-    public ArrayList<EmployeeInfo> putAttendance(ArrayList<EmployeeInfo> listEmp )
-    {
+
+    public ArrayList<EmployeeInfo> putAttendance(ArrayList<EmployeeInfo> listEmp) {
         LocalDate date = LocalDate.now();
-        for(int i=0;i<listEmp.size();i++)
-        {
+        for (int i = 0; i < listEmp.size(); i++) {
 
             System.out.println(listEmp.get(i).getName());
 
             listEmp.get(i).setStatus(sc.next());
-            listEmp.get(i).setDate(date+"");
+            listEmp.get(i).setDate(date + "");
         }
         return listEmp;
     }
-    public ArrayList<EmployeeInfo> putOutput(ArrayList<EmployeeInfo>listEmp)
-    {
+
+    public ArrayList<EmployeeInfo> putOutput(ArrayList<EmployeeInfo> listEmp) {
         LocalDate date = LocalDate.now();
-        for(int i=0;i<listEmp.size();i++)
-        {
+        for (int i = 0; i < listEmp.size(); i++) {
             System.out.println(listEmp.get(i).getName());
             listEmp.get(i).setOutput(sc.nextDouble());
-            listEmp.get(i).setDate(date+"");
-        }   
+            listEmp.get(i).setDate(date + "");
+        }
         return listEmp;
     }
 
+    public boolean continueOrNot() {
+        System.out.println("Do you want to continue or not");
+        return (sc.nextInt() == 0) ? true : false;
+    }
 
 }
