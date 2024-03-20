@@ -8,14 +8,42 @@ public class EmployeeInfo {
     String team_name;
     int team_id;
     String date;
-    double Output ;
+    double Output;
+    String email;
+    String password;
+    String DateOfbirth;
+
+    public void setDateOfbirth(String dateOfbirth) {
+        DateOfbirth = dateOfbirth;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getDateOfbirth() {
+        return DateOfbirth;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     public void setOutput(double output) {
         Output = output;
     }
+
     public double getOutput() {
         return Output;
     }
-
 
     public void setDate(String date) {
         this.date = date;
@@ -26,11 +54,12 @@ public class EmployeeInfo {
     }
 
     public void setStatus(String status) {
-        if(status.equalsIgnoreCase("P")||status.equalsIgnoreCase("present"))
-        this.status = "Present";
+        if (status.equalsIgnoreCase("P") || status.equalsIgnoreCase("present"))
+            this.status = "Present";
         else
-        this.status = "Absent";
+            this.status = "Absent";
     }
+
     public String getStatus() {
         return status;
     }

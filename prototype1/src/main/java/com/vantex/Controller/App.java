@@ -26,7 +26,7 @@ public class App {
         switch(ei.getRole()){
         case "Manager":{
             System.out.println("Welcome, Manager "+ei.getName());
-            // ManagerController.start();
+            ManagerController.start(ei);
             break;
         }
         case "Supervisor":{
@@ -36,7 +36,7 @@ public class App {
                 }
         case "Employee":{
             System.out.print("Welcome,"+ei.getName());
-            // EmployeeController.start();
+            // EmployeeController.start(ei)S;
             break;
         }
         }

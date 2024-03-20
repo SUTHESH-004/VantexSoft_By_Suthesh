@@ -2,20 +2,20 @@ login
 
 Manager
 
-1.Enter the attendance based on the team of the Supervisor
-2.Enter the Output based on the team of the Supervisor
-3.Get the Output and attendance with employeename based on the team of the Supervisor
-4.get the attendance with employeename based on the team of the Supervisor
-5 get the output with employeename based ont the team of the Supervisor
-6.Add employee.
+1.Enter the attendance based on the team of the Supervisor - Completed
+2.Enter the Output based on the team of the Supervisor - Completed
+3.Get the Output and attendance with employeename based on the team of the Supervisor -Completed
+4.get the attendance with employeename based on the team of the Supervisor-Completed
+5 get the output with employeename based ont the team of the Supervisor-Completed
+6.Add employee. 
 7 delete employee.
 
 Supervisor
-1.Enter the attendance based on the team of the Supervisor
-2.Enter the Output based on the team of the Supervisor
-3.Get the Output and attendance with employeename based on the team of the Supervisor
-4.get the attendance with employeename based on the team of the Supervisor
-5 get the output with employeename based ont the team of the Supervisor
+1.Enter the attendance based on the team of the Supervisor - Completed
+2.Enter the Output based on the team of the Supervisor - Completed
+3.Get the Output and attendance with employeename based on the team of the Supervisor -Completed
+4.get the attendance with employeename based on the team of the Supervisor - Completed
+5 get the output with employeename based ont the team of the Supervisor - Completed
 
 employee
 1.view their preformance of the year;

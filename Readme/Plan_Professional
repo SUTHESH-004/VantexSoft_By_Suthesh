@@ -1,0 +1,52 @@
+Login:
+
+Manager:
+
+Record attendance for team members under the supervision of the respective supervisor.
+Log output data for team members under the supervision of the respective supervisor.
+Retrieve output and attendance records along with employee names for team members under the supervision of the respective supervisor.
+Obtain attendance records along with employee names for team members under the supervision of the respective supervisor.
+Obtain output data along with employee names for team members under the supervision of the respective supervisor.
+Add new employees to the system.
+Remove employees from the system.
+Supervisor:
+
+Record attendance for team members under their supervision.
+Log output data for team members under their supervision.
+Retrieve output and attendance records along with employee names for team members under their supervision.
+Obtain attendance records along with employee names for team members under their supervision.
+Obtain output data along with employee names for team members under their supervision.
+Employee:
+
+View their annual performance.
+View their monthly performance.
+Access their daily performance report.
+
+
+
+
+
+new features : 
+
+
+
+Certainly! Here are some additional methods that could be implemented:
+
+Manager:
+
+assignSupervisorToTeam: Assign a supervisor to manage a specific team.
+updateEmployeeDetails: Update employee information such as name, contact details, etc.
+generateTeamReport: Generate a comprehensive report summarizing the performance and attendance of the entire team.
+approveTimeOffRequests: Review and approve/reject time-off requests submitted by team members.
+Supervisor:
+
+createTeamMeeting: Schedule a team meeting to discuss performance, goals, etc.
+conductPerformanceReviews: Conduct performance reviews for team members and provide feedback.
+manageTeamSchedule: Manage the work schedule of team members, including shifts and assignments.
+initiateTrainingPrograms: Initiate training programs to enhance the skills and knowledge of team members.
+Employee:
+
+submitPerformanceImprovementPlan: Submit a plan outlining steps for improving performance if required.
+requestFeedbackSession: Request a feedback session with the supervisor to discuss performance and goals.
+accessTrainingMaterials: Access training materials and resources provided by the company.
+updatePersonalGoals: Update personal goals and objectives to align with team and organizational goals.
