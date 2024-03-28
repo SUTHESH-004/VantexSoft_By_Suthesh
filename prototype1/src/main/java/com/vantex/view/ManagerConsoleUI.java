@@ -48,16 +48,16 @@ public class ManagerConsoleUI extends SupervisorConsoleUI {
     }
 
     public static void showEmpdetails(ArrayList<EmployeeInfo> list) {
-        System.out.println("╔════════════╦═════════════════╦═══════════════════╦═════════════╦══════════════════╗");
-        System.out.printf("%║-15s║%-15s║%-15s║%-15s\n", "Name", "email", "DateOfBirth", "Roles║");
+        System.out.println("╔═══════════════╦════════════════════╦═════════════════════╦══════════════╗");
+        System.out.printf("║%-15s║%-20s║%-20s║%-15s║\n", "Name", "Email", "DateOfBirth", "Roles");
         for (int i = 0; i < list.size(); i++) {
-            System.out.printf("║%-15s║%-15s║%-15s║%-15s║\n",
-
-                    list.get(i).getName(),
-                    list.get(i).getEmail(),
-                    list.get(i).getDateOfbirth(),
-                    list.get(i).getRole());
-            System.out.println("╚═══════════════╬══════════════════════╬══════════════════╬═══════════════════╝");
+            System.out.printf("║%-15s║%-20s║%-20s║%-15s║\n", list.get(i).getName(), list.get(i).getEmail(),
+                    list.get(i).getDateOfbirth(), list.get(i).getRole());
+            if (i == list.size() - 1) {
+                System.out.println("╚═══════════════╩════════════════════╩════════════════════╩═══════════════╝");
+            } else {
+                System.out.println("╠═══════════════╬════════════════════╬════════════════════╬═══════════════╣");
+            }
         }
 
     }

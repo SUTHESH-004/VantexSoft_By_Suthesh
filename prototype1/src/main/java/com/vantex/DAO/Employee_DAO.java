@@ -94,9 +94,9 @@ public class Employee_DAO {
             while (rs.next()) {
                 EmployeeInfo ei = new EmployeeInfo();
                 ei.setName(rs.getString(1));
-                ei.setEmail(rs.getString(1));
-                ei.setDateOfbirth(rs.getString(1));
-                ei.setRole(rs.getString(1));
+                ei.setEmail(rs.getString(2));
+                ei.setDateOfbirth(rs.getString(3));
+                ei.setRole(rs.getString(4));
                 list.add(ei);
             }
             return list;
