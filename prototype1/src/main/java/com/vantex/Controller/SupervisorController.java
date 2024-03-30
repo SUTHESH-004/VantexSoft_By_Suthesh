@@ -44,7 +44,7 @@ public class SupervisorController {
                 scui.displayAttendace(ert);
                 ContinueOrExit(ei,scui.continueOrNot());
             }
-            // view attendance only
+            // view output Only 
             case 5->{
                 LocalDate n = LocalDate.now();
                 ArrayList<EmployeeInfo> ert = Attendance_DAO.getOutput(n+"",ei);

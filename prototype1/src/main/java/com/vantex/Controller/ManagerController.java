@@ -53,16 +53,19 @@ public class ManagerController {
                 scui.displayOutput(ert);
                 ContinueOrExit(ei, scui.continueOrNot());
             }
+            // add employee to the database 
             case 6 -> {
                 EmployeeInfo employeeToAdd = scui.getEmployeeDetailstoAdd();
                 Employee_DAO.addEmployee(employeeToAdd);
                 ContinueOrExit(ei, scui.continueOrNot());
             }
+            // remove employee to the database
             case 7 -> {
                 EmployeeInfo employeeToRemove = scui.getEmployeeDetailstoRemove();
                 Employee_DAO.removeEmployee(employeeToRemove);
                 ContinueOrExit(ei, scui.continueOrNot());
             }
+            // show all the employee details of company 
             case 8 -> {
                 ArrayList<EmployeeInfo> empdetailtoshow = Employee_DAO.getAllEmployeeDetails();
                 ManagerConsoleUI.showEmpdetails(empdetailtoshow);
